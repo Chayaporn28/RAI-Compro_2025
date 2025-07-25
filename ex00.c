@@ -1,10 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    printf("salary     : %8d\n" ,6500);
-    printf("Money,Week : %8.2f\n" ,6500.0/4);
-    printf("Money,Day  : %8.3f\n", 6500.0/4/7);
+   int a = 10;
+   printf("%d\n", 10*2*3-10/7);
+   printf("%d\n", a*2*(3-10)/7);
+   printf("%f\n", 19/2.0);
+   printf("%d\n", a*2>2+3);
+   printf("%d\n", a*2<2+3);
 
-    return (0);
-
+   return (0);
+               
 }
