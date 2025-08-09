@@ -1,17 +1,18 @@
 #include <stdio.h>
 #define PI 3.14159
-int main() {
+int main() 
+{
     float height, radius, volume;
 
-    printf("Enter cone hight: ");
+    printf("Enter cone hight : ");
     scanf("%f", &height);
 
-    printf("Enter cone base radius: ");
+    printf("Enter cone base radius : ");
     scanf("%f", &radius);
 
     volume = (1.0/3) * PI * radius * radius * height;
 
-    printf("Cone volume = %.1f\n\n", volume);
+    printf("Cone volume = %.1f\n", volume);
 
     if (volume > 260) {
         printf("This cone is perfect for Supun project\n");

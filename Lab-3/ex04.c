@@ -18,18 +18,19 @@ int main()
     
     float Average = (score1+score2+score3)/3 ;
       
-      if(Average>=80) {
-         grade='A';
+      if(Average >= 80) {
+         grade = 'A';
             
-         } else if (Average >=70 && Average < 80) {
-         grade='B';
-         } else  if(Average >=60 && Average < 70){
-         grade='C';
-         }else if(Average >=50 && Average < 60){
-         grade='D';
-         } else if (Average<50){
-            grade= 'F';}
-            printf("%s, your average is %.2f you got grade %c",name,Average,grade) ;
+         } else if (Average >= 70 && Average < 80) {
+         grade = 'B';
+         } else if (Average >= 60 && Average < 70) {
+         grade = 'C';
+         } else if (Average >= 50 && Average < 60) {
+         grade = 'D';
+         } else if (Average < 50) {
+         grade = 'F';}
+            printf("%s, your average is %.2f you got grade %c\n",name,Average,grade) ;
+
         return 0;                      
         
 }

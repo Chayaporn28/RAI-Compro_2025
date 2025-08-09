@@ -3,7 +3,7 @@
 int main()
 {   
     int num ;
-    printf("Enter a number :");
+    printf("Enter a number : ");
     scanf("%d",&num) ;
     if(num%2==0 ) {
 
@@ -11,7 +11,7 @@ int main()
     
     } else {
 
-        printf("%d is out of range",num);
+        printf("%d is out of range\n",num);
     }
     
         return 0;
