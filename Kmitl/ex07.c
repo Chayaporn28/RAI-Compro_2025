@@ -1,13 +1,20 @@
 #include<stdio.h>
 int main()
 {
-    int num;
-    printf("Multiplication table\n");
-    for (num=1;num<=12;num++)
+    int vol=0,alp=0,count;
+    char let;
+    for (count=0;count<10;count++)
     {
-        printf("%4d * %-2d = %-3d\n",9,num,9*num);
+        printf("\nEnter letter a-z : ");
+        scanf(" %c",&let);
+        if ((let=='a') || (let=='e') || (let=='i') || (let=='o') || (let=='u'))
+        vol++;
+    else
+        alp++;
     }
+        printf("\n***Result***\n");
+        printf("Vowel(a,e,i,o,u) = %d\n",vol);
+        printf("Other letter     = %d\n",alp);
 
-    return(0);
-
+    return (0);
 }
