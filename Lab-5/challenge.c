@@ -1,38 +1,28 @@
 #include<stdio.h>
-int main()
+int main() 
 {
-    int num[5];
-    int time[5];
-    int ele;
+    int n;
 
-    printf("Input : \n");
-    printf("Enter number of element : ");
-    scanf("%d",&ele);
+    printf("Enter number of elements : ");
+    scanf("%d",&n);
 
-    for (int i = 0; i > 5; i++) {
-        printf("Enter %d integers : ",ele);
-        scanf("%d",&num[i]);
-        time[i] = -1;
+    int arr[n], counted[n];
+
+    printf("Enter %d integers : ",n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        counted[i] = 0;
     }
-    for (int i = 0; i < num; i++) {
+    for (int i = 0; i < n; i++) {
+        if (counted[i]) continue; 
         int count = 1;
-        for (int j = i; j < num; j++) {
-            if (num[i] == num[j]) {
+    for (int j = i + 1; j < n; j++) {
+            if (arr[i] == arr[j]) {
                 count++;
-                time[j] = 0;
+                counted[j] = 1; 
             }
         }
-        if (time[i] != 0) {
-            time[i] = c;
-        }
+        printf("Element %d occurs %d times\n", arr[i], count);
     }
-    printf("\nOutput : \n");
-    for (int i = 0; i < num; i++) {
-        if (time[i] != 0) {
-            printf("Element %d occurs %d time\n",num[5],time[5]);
-        }
-    }
-
-    return(0);
-
+    return 0;
 }
