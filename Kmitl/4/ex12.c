@@ -18,4 +18,5 @@ int main ()
     printf("\n %s,%d",s[i].name,s[i].age);
 
     return(0);
+    
 }
