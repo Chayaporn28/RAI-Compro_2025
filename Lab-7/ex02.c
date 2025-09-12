@@ -8,7 +8,10 @@ int main()
 
     printf("Before reverse : a = %d, b = %d\n",a,b);
 
-    int temp 
+    int temp;
+    temp = *pt1;
+    *pt1 = *pt2;
+    *pt2 = temp;
 
     printf("After reverse : a = %d, b = %d\n",a,b);
 
